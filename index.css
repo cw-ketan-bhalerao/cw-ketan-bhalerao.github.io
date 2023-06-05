@@ -1,0 +1,185 @@
+html{
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+nav{
+    position: fixed;
+   
+   background-color: black;
+    width: 100vw;
+    
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+header ul li{
+    margin: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;    
+}
+
+header ul li:hover{
+    cursor: pointer;
+    background-color: white;
+    
+}
+header ul li a:hover{
+    color: black;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nameInfo{
+    /* border: 2px solid aliceblue; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 70vh;
+
+}
+.img{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.name h1{
+    font-size: 50px;
+    text-align: center;
+    
+}
+.name p{
+    background-color: rgb(1, 49, 92);
+    text-align: center;
+    padding: 3px;
+    width: 70%;
+    margin: 10px auto;
+}
+
+/* Experience Tab */
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp h1{
+    font-size: 50px;
+}
+
+.exp1{
+    background-image:linear-gradient(lightblue,rgb(179, 91, 179));
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+/* Education */
+
+.education{
+    display: flex;
+    justify-content: center;
+}
+
+.yrs{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-right: 100px;
+}
+
+.clg{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-left: 2px solid blue;
+    padding-left: 100px;
+}
+
+
+/* Skills */
+
+.skills{
+    text-align: center;
+}
+
+.skills p{
+    background-color: coral;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Projects */
+
+.projects{
+ text-align: left;    
+ margin: auto;
+}
+
+.proj1{
+    border: 2px solid black;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #6CB4EE;
+    color: black;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.proj1 span{
+    background-color:thistle;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* contact */
+
+.contact{
+    
+    text-align: center;
+}
+
+.contact p{
+    margin: 10px;
+    
+}
+
+.contact p:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+
+}
+
+h1{
+    border: 1px dotted aliceblue;
+    
+}
+
+
