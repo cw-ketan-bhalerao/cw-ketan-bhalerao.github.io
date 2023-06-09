@@ -26,7 +26,7 @@ header ul{
     
 }
 header ul li{
-    margin: 10px;
+    margin: 8px;
     border: 2px solid white;
     padding: 5px;
     border-radius: 5px;    
@@ -35,6 +35,7 @@ header ul li{
 header ul li:hover{
     cursor: pointer;
     background-color: white;
+    color: black;
     
 }
 header ul li a:hover{
@@ -42,8 +43,10 @@ header ul li a:hover{
     
 }
 header ul li a{
+    /* display: flex; */
     text-decoration: none;
     color: white;
+    /* margin: 10px; */
 }
 
 .nameInfo{
@@ -181,5 +184,7 @@ h1{
     border: 1px dotted aliceblue;
     
 }
+
+
 
 

@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 50%;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.label {
+    /* margin: 10px; */
+    padding: 10px;
+    font-size: 18px;
+}
+
+span {
+    color: red;
+}
+
+.inputfield {
+    /* margin: 10px; */
+    padding: 10px;
+    outline-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 350px;
+}
+
+#showPass1 {
+    position: relative;
+    right: 27px;
+    cursor: pointer;
+}
+
+#hidePass1 {
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+    /* display: none; */
+    visibility: hidden;
+}
+
+#showPass2 {
+    position: relative;
+    right: 27px;
+    cursor: pointer;
+}
+
+#hidePass2 {
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+    /* display: none; */
+    visibility: hidden;
+}
+
+#signupbtn {
+    background-color: #0d6efd;
+    outline-style: none;
+    border: none;
+    padding: 10px;
+    margin: 50px auto;
+    color: white;
+    font-size: 20px;
+
+    border-radius: 5px;
+    /* width: fit-content; */
+}
+
+#signupbtn:hover {
+    background-color: #09439b;
+}
+
+.err {
+    color: red;
+    width: 350px;
+    display: none;
+    
+}
+
+/* #passwordErr{
+    width: 60%;
+} */
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 840px) {
+
+    body {
+        /* background-color: white; */
+        /* border: 0; */
+    }
+
+    .main {
+        /* display: block; */
+        height: 100%;
+        /* border-radius: 0; */
+        width: 70%;
+        
+
+    }
+
+    .label {
+        font-size: 15px;
+    }
+
+    .inputfield {
+        font-size: 15px;
+        width: 100%;
+    }
+
+   
+    .err {
+        color: red;
+        
+        display: none;
+        
+    }
+
+   
+
+    #showPass1 {
+        left: 13.1rem;
+        bottom: 2.3rem;
+        
+    }
+
+    #hidePass1 {
+        left: 11.7rem;
+        bottom: 2.3rem;
+        
+    }
+
+    #showPass2 {
+        left: 13.1rem;
+        bottom: 2.3rem;
+        
+    }
+
+    #hidePass2 {
+        left: 11.7rem;
+        bottom: 2.3rem;
+        
+    }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .main{
+        width: 100%;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 260px) {
+
+    .main{
+        width: 100vw;
+    }
+
+    #showPass1 {
+        left:11rem;
+    }
+
+    #hidePass1 {
+        left:9.5rem;
+       
+    }
+
+    #showPass2 {
+        left:11rem;
+    }
+
+    #hidePass2 {
+        left:9.5rem;
+       
+    }
+
+
+
+}

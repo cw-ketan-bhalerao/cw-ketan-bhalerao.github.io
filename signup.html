@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Sign Up</h1>
+        <form>
+            <label class="label">Username<span>*</span> :</label>
+            <input oninput="handleUsername()" maxlength="25" minlength="3" required placeholder="Enter your Username"
+                id="username" class="inputfield" type="text">
+
+            <p class="err" id="usernameErr">Username must be between 3 and 25 characters.</p>
+
+            <label class="label">Email<span>*</span> :</label>
+            <input oninput="handleEmail()" id="email" required placeholder="Enter your Email" class="inputfield"
+                type="email">
+
+            <p class="err" id="emailErr">Enter a valid email address</p>
+
+
+            <label class="label">Password<span>*</span> :</label>
+            <div>
+                <input oninput="handlePassword()" id="password" required placeholder="Enter your Password"
+                    class="inputfield" type="password">
+                <i onclick="handleShowPassword1()" class="far fa-eye" id="showPass1"></i>
+                <i onclick="handleHidePassword1()"  class="far fa-eye-slash" id="hidePass1"></i>
+            </div>
+
+            <p class="err" id="passwordErr">Password must have atleast 8 characters that include atleast 1 lowercase
+                character,1 uppercase character,1 number and 1 special character in (!@#$%^&*)</p>
+
+            <label class="label">Confirm Password<span>*</span> :</label>
+            <div>
+                <input oninput="handleConfirmPassword()" id="confirmPass" required placeholder="Re-enter your Password"
+                    class="inputfield" type="password">
+                <i onclick="handleShowPassword2()"  class="far fa-eye" id="showPass2"></i>
+                <i onclick="handleHidePassword2()"  class="far fa-eye-slash" id="hidePass2"></i>
+            </div>
+
+            <p class="err" id="confirmPassErr">Please enter same password again.</p>
+
+
+
+            <button type="button" class="btn btn-primary disbaled" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                id="signupbtn">
+                Sign Up
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            You have Successfully Signed Up &#9989;
+                        </div>
+                        <div class="modal-footer">
+                            Thank You.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
